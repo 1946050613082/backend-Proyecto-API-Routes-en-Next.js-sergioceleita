@@ -121,6 +121,20 @@ Aprendizaje de Next.js como backend.
 
 evidencia grafica: 
 
+![foto1](https://github.com/user-attachments/assets/3b72271c-42be-4e2a-91b7-4881b14cb545)
+![foto2](https://github.com/user-attachments/assets/0052de8a-576a-480d-bf17-7661943ac016)
+![foto3](https://github.com/user-attachments/assets/9d92c361-3077-482e-b286-7afc9b7d8b0f)
+![foto4](https://github.com/user-attachments/assets/00d7b15d-4160-4910-a875-b267e6e8d218)
+![foto5](https://github.com/user-attachments/assets/99f4bd0f-4f2c-4474-9261-e19467c189e2)
+
+
+
+
+
+
+
+
+
 
 
 
