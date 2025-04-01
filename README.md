@@ -1,40 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+Descripción Técnica Detallada del Proyecto Next.js API
 
-## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Se implementó un servicio backend utilizando Next.js con el enfoque tradicional de Pages Router, creando una API RESTful con las siguientes características técnicas:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Estructura Base:
 
-## Learn More
+Configuración inicial con Typescript estricto
 
-To learn more about Next.js, take a look at the following resources:
+Arquitectura basada en el sistema de routing convencional (/pages/api)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+Exclusión deliberada de App Router para mantener simplicidad
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Configuración TypeScript optimizada para desarrollo API
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+
+
+
+Endpoints Implementados:
+
+
+Endpoint de Bienvenida (/api/welcome):
+
+
+
+Método: GET
+
+Respuesta estructurada en JSON
+
+Incluye metadata descriptiva de la API
+
+Manejo de errores para métodos HTTP no soportados (405 Method Not Allowed)
+
+
+
+
+Endpoint de Soporte Personalizado (/api/support):
+
+
+
+Método: GET con query parameter obligatorio
+
+Validación de tipo para el parámetro 'name'
+
+Sistema de mensajes aleatorios con estructura de tips
+
+Respuestas con timestamp para trazabilidad
+
+Códigos de estado HTTP adecuados (200 OK, 400 Bad Request)
+
+
+
+
+Flujo de Peticiones:
+
+
+
+Cliente → Solicitud HTTP → Next.js Server
+
+Next.js → Routing → Controlador API
+
+Controlador → Validación → Lógica de Negocio → Respuesta JSON
+
+
+
+Pruebas y Validación:
+
+
+
+Configuración de entorno Postman con:
+
+Variables de entorno para URLs base
+
+Test scripts para validar:
+
+Códigos de respuesta
+
+Estructura JSON
+
+Presencia de datos obligatorios
+
+Ejemplos documentados para consumo
+
+Configuración Específica:
+
+next.config.js optimizado para API routes
+
+tsconfig.json con ajustes para desarrollo backend
+
+Exclusión deliberada de:
+
+Sistemas de CSS (Tailwind)
+
+Linters (ESLint)
+
+Carpetas /src
+
+Turbopack
+
+
+
+Este proyecto sirve como base escalable para:
+
+Microservicios
+
+Prototipado rápido
+
+Sistemas serverless
+
+Aprendizaje de Next.js como backend.
+
+
+
+evidencia grafica: 
+
+
+
+
